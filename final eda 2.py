@@ -176,7 +176,7 @@ class DataLoader:
         if skewed_cols:
             insights.append("📈 Skewed Features:\n" + "\n".join([f"• {col}: {skew:.2f}" for col, skew in skewed_cols[:3]]))
         
-        # Correlations
+        
         corr_matrix = self.df.corr(numeric_only=True).abs()
         strong_corrs = corr_matrix.unstack().sort_values(ascending=False)
         strong_corrs = strong_corrs[strong_corrs.between(0.7, 0.99)]
