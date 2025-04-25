@@ -18,7 +18,7 @@ import openpyxl
 
 warnings.filterwarnings('ignore')
 
-# Global styling
+
 sns.set_style("whitegrid")
 plt.rcParams['axes.labelsize'] = 12
 plt.rcParams['axes.titlesize'] = 14
