@@ -122,7 +122,7 @@ class DataLoader:
                                   if np.issubdtype(col.dtype, np.number) 
                                   else col.fillna(col.mode()[0]) if not col.mode().empty else col)
         
-        # Remove duplicates
+    
         if remove_duplicates:
             self.df = self.df.drop_duplicates()
         
