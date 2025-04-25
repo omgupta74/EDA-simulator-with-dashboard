@@ -52,8 +52,8 @@ class DataLoader:
                 chunk_size = 100000
                 chunks = pd.read_csv(self.file_path, chunksize=chunk_size, low_memory=False)
                 self.df = pd.concat(tqdm(chunks, desc="Loading CSV chunks"), ignore_index=True)
-            elif self.file_path.endswith('.xlsx'):
-                # Estimate total rows for chunking
+            elif self.file_path.endswith('.xlsx'
+                                         
                 wb = openpyxl.load_workbook(self.file_path, read_only=True)
                 ws = wb.active
                 total_rows = ws.max_row - 1  # Exclude header
