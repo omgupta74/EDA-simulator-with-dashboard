@@ -125,7 +125,7 @@ class DataLoader:
         if remove_duplicates:
             self.df = self.df.drop_duplicates()
         
-        # Handle outliers
+        
         if handle_outliers:
             num_cols = self.df.select_dtypes(include=np.number).columns
             if not num_cols.empty:
