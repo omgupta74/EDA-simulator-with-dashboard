@@ -136,10 +136,7 @@ class DataLoader:
         print(f"Memory usage after preprocessing: {self.df.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
         return self.df
 
-class DataAnalyzer:
-    """Enhanced statistical analysis with hypothesis testing"""
-    def __init__(self, df):
-        self.df = df
+
         
     def comprehensive_summary(self):
         """Generate detailed data profile"""
