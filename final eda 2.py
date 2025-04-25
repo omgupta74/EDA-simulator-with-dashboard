@@ -15,7 +15,7 @@ from pandastable import Table
 from sklearn.preprocessing import MinMaxScaler
 import openpyxl
 
-# Suppress warnings
+
 warnings.filterwarnings('ignore')
 
 # Global styling
