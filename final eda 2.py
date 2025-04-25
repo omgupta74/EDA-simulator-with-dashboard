@@ -107,7 +107,6 @@ class DataLoader:
         for col in date_cols:
             self.df[col] = pd.to_datetime(self.df[col], errors='coerce')
             
-        # Optimize data types
         for col in self.df.select_dtypes(include=['float64']).columns:
             self.df[col] = pd.to_numeric(self.df[col], downcast='float')
         for col in self.df.select_dtypes(include=['int64']).columns:
