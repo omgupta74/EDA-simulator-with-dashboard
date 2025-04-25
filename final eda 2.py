@@ -91,7 +91,7 @@ class DataLoader:
         if self.df is None:
             raise ValueError("No data loaded.")
             
-        # Improved date column detection
+    
         date_pattern = r'(date|time|year|month|day|timestamp|dt)'
         date_cols = [col for col in self.df.columns 
                     if re.search(date_pattern, col, re.IGNORECASE)]
