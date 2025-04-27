@@ -188,7 +188,7 @@ class DataVisualizerGUI:
     """Interactive GUI dashboard with comprehensive visualizations"""
     def __init__(self, df, root):
         self.df = df
-        self.root = root
+   #     self.root = root
         self.current_figures = []
         self.theme_mode = 'light'
         self.current_filters = {}
