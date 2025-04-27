@@ -371,7 +371,7 @@ class DataVisualizerGUI:
         toolbar.update()
         
         # Add export button
-        btn = Button(toolbar, text="💾 Export", command=lambda: self.export_figure(fig))
+     #   btn = Button(toolbar, text="💾 Export", command=lambda: self.export_figure(fig))
         btn.pack(side='right')
         
         if analysis_text:
