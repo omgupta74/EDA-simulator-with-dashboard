@@ -107,7 +107,7 @@ class DataLoader:
         for col in date_cols:
             self.df[col] = pd.to_datetime(self.df[col], errors='coerce')
             
-        for col in self.df.select_dtypes(include=['float64']).columns:
+  #      for col in self.df.select_dtypes(include=['float64']).columns:
             self.df[col] = pd.to_numeric(self.df[col], downcast='float')
         for col in self.df.select_dtypes(include=['int64']).columns:
             self.df[col] = pd.to_numeric(self.df[col], downcast='integer')
@@ -673,7 +673,7 @@ def main():
                 DataVisualizerGUI(loader.df, root)
                 root.mainloop()
             except Exception as e:
-                print(f"Preprocessing error: {str(e)}")
+          #      print(f"Preprocessing error: {str(e)}")
 
         Button(preprocess_window, text="Apply Preprocessing", command=apply_preprocessing, 
               bg='#4CAF50', fg='white').pack(pady=20)
