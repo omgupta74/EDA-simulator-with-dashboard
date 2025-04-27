@@ -63,7 +63,7 @@ class DataLoader:
                     print("Warning: Large Excel file detected (>1M rows). This may take significant time.")
                 
                 chunk_size = 100000
-                chunks = []
+                #chunks = []
                 for start_row in tqdm(range(0, total_rows, chunk_size), desc="Loading Excel chunks"):
                     chunk = pd.read_excel(
                         self.file_path,
