@@ -77,7 +77,7 @@ class DataLoader:
             elif self.file_path.endswith('.parquet'):
                 self.df = pd.read_parquet(self.file_path)
                 
-            print(f"Successfully loaded {len(self.df)} rows.")
+       #     print(f"Successfully loaded {len(self.df)} rows.")
             print(f"Initial memory usage: {self.df.memory_usage(deep=True).sum() / 1024**2:.2f} MB")
             return self.df
             
