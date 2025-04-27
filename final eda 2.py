@@ -20,7 +20,7 @@ warnings.filterwarnings('ignore')
 
 
 sns.set_style("whitegrid")
-plt.rcParams['axes.labelsize'] = 12
+#plt.rcParams['axes.labelsize'] = 12
 plt.rcParams['axes.titlesize'] = 14
 
 class DataLoader:
