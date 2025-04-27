@@ -16,7 +16,7 @@ from sklearn.preprocessing import MinMaxScaler
 import openpyxl
 
 
-warnings.filterwarnings('ignore')
+#warnings.filterwarnings('ignore')
 
 
 sns.set_style("whitegrid")
