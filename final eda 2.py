@@ -32,7 +32,7 @@ class DataLoader:
     def load_dataset(self):
         """Load dataset with progress tracking and error handling"""
         root = Tk()
-        root.withdraw()
+        #root.withdraw()
         self.file_path = filedialog.askopenfilename(
             title="Select Dataset",
             filetypes=[
