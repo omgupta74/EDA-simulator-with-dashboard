@@ -137,7 +137,7 @@ class DataLoader:
 
 
         
-    def comprehensive_summary(self):
+ #   def comprehensive_summary(self):
         """Generate detailed data profile"""
         summary = pd.DataFrame({
             'dtype': self.df.dtypes,
